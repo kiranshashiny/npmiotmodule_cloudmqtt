@@ -45,43 +45,20 @@ var client  = mqtt.connect(url, options)
 client.on('suback', function (topic, message) {
   console.log (" received an acknowledgement" + message);
 })
- 
-client.on('suback', function () {
-  console.log (" received an acknowledgement" );
+
+/* not working...
+
+client.on('connack', function (packet ) {
+    console.log ( "received an ack");
 })
+*/
 
 client.on('connect', function () {
   console.log ("connected " );
-    
-    // Subscribe , and this is what you will enter in the Send Message window in the 
-    // CloudMQTT Console.
-    // Until this is received the control does not go anywhere.
-
-  //client.publish('/fromLaptop', 'Hello mqtt')
-
-  // this message should appear on the CloudMQTT Console.
-
-  client.publish("/tocloudmqtt",'{"d" : { "cpu" : 60, "mem" : 50 }}');
-  
+  client.subscribe ('test',{qos:1});
 })
 
-client.subscribe('/fromcloudmqtt');
  
 client.on('message', function (topic, message) {
- // subscribe to a topic from cloudmqtt 
- 
   console.log (" In message() received a message " + message);
-
-  client.subscribe('hello/world', function() {
-    // when a message arrives, do something with it
-    client.on('message', function(topic, message, packet) {
-      console.log("Received '" + message + "' on '" + topic + "'");
-    });
-  });
-
-  // publish a message to a topic
-  client.publish('hello/world', 'my message', function() {
-    console.log("Message is published");
-    client.end(); // Close the connection when published
-  });
 });
