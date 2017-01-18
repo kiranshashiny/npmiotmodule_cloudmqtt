@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/shashikiran/nodetest/npmiotmodule_cloudmqtt',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/shashikiran/.npm/@whitewater/npmiotmodule_cloudmqtt/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/shashikiran/.npm correctMkdir not in flight; initializing
+10 info lifecycle @whitewater/npmiotmodule_cloudmqtt@1.0.0~prepublish: @whitewater/npmiotmodule_cloudmqtt@1.0.0
+11 silly lifecycle @whitewater/npmiotmodule_cloudmqtt@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/shashikiran/.npm/@whitewater/npmiotmodule_cloudmqtt/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/shashikiran/nodetest/npmiotmodule_cloudmqtt' ]
+13 verbose tarball /Users/shashikiran/.npm/@whitewater/npmiotmodule_cloudmqtt/1.0.0/package.tgz
+14 verbose folder /Users/shashikiran/nodetest/npmiotmodule_cloudmqtt
+15 verbose addLocalTarball adding from inside cache /Users/shashikiran/.npm/@whitewater/npmiotmodule_cloudmqtt/1.0.0/package.tgz
+16 verbose correctMkdir /Users/shashikiran/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @whitewater/npmiotmodule_cloudmqtt@1.0.0
+18 verbose afterAdd /Users/shashikiran/.npm/@whitewater/npmiotmodule_cloudmqtt/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/shashikiran/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/shashikiran/.npm/@whitewater/npmiotmodule_cloudmqtt/1.0.0/package/package.json written
+21 silly publish { name: '@whitewater/npmiotmodule_cloudmqtt',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Module to subscribe events from Bluemix Watson IoT Platform',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'test.js' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/kiranshashiny/npmiotmodule_cloudmqtt.git' },
+21 silly publish   keywords: [ 'iot', 'bluemix', 'cloudmqtt', 'npm', 'iotf' ],
+21 silly publish   author: { name: 'Shashi Kiran' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/kiranshashiny/npmiotmodule_cloudmqtt/issues' },
+21 silly publish   homepage: 'https://github.com/kiranshashiny/npmiotmodule_cloudmqtt#readme',
+21 silly publish   readme: '# npmiotmodule_cloudmqtt\n\n\nModule which publishes and subscribes to events from the Cloudmqtt broker.\n\nThe node js code prints the received events on the xterm as it arrives.\n\n\n\nPrerequisites on the Broker : \n\n    An account on cloudmqtt.com ( Mine is KoolCat )\n\n    Open the CloudMQTT console, and get the instance info like the server name,\n    \n    Port to connect to, username and the password. You will need this to feed into the nodejs code\n    \n    in order to subscribe to events to/from the Cloud broker/\n\n\n<img width="838" alt="screen shot 2017-01-17 at 4 24 23 pm" src="https://cloud.githubusercontent.com/assets/14288989/22017804/cc2abdc8-dcd1-11e6-9bda-0e1004e28453.png">\n\n<img width="963" alt="screen shot 2017-01-17 at 4 24 04 pm" src="https://cloud.githubusercontent.com/assets/14288989/22017805/cc79959c-dcd1-11e6-9cf5-689f3c66e9d8.png">\n\n<img width="1102" alt="screen shot 2017-01-17 at 4 23 47 pm" src="https://cloud.githubusercontent.com/assets/14288989/22017806/cc7cbd58-dcd1-11e6-8f32-f59934abbc5c.png">\n\n\n\n\nPrerequisites on the Device end:\n\n    Arduino Genuino\n\n    Arduino Ethernet shield \n    \n    Temperature sensor DHT-11, or a simulated sensor ( random number generator. )\n\n    Sketch to publish and subscribe data to the Cloudmqtt platform\n\n\nOverall steps:\n    \n    Start the sketch and watch that the data is going to the Cloudmqtt platform\n\n    Start the application node pubsub_cloudmqtt on the laptop or at the other end. In my case the laptop.\n    \n    and see it is subscribing to the events.\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '32481688876dba00f0bdd896684cca7d1488e9e5',
+21 silly publish   _id: '@whitewater/npmiotmodule_cloudmqtt@1.0.0',
+21 silly publish   _shasum: '916c7573e0e8382e7ab698025bf1c4a622051ea7',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @whitewater/npmiotmodule_cloudmqtt
+24 silly mapToRegistry scope (from package name) @whitewater
+25 silly mapToRegistry registry https://npm-registry.whitewater.ibm.com/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: '@whitewater/npmiotmodule_cloudmqtt',
+26 silly mapToRegistry   scope: '@whitewater',
+26 silly mapToRegistry   escapedName: '@whitewater%2fnpmiotmodule_cloudmqtt',
+26 silly mapToRegistry   name: '@whitewater/npmiotmodule_cloudmqtt',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://npm-registry.whitewater.ibm.com/@whitewater%2fnpmiotmodule_cloudmqtt
+28 verbose publish registryBase https://npm-registry.whitewater.ibm.com/
+29 silly publish uploading /Users/shashikiran/.npm/@whitewater/npmiotmodule_cloudmqtt/1.0.0/package.tgz
+30 verbose request uri https://npm-registry.whitewater.ibm.com/@whitewater%2fnpmiotmodule_cloudmqtt
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:17:56 AM
+33 verbose request using bearer token for auth
+34 verbose request id d7aa040ad4a442f9
+35 http request PUT https://npm-registry.whitewater.ibm.com/@whitewater%2fnpmiotmodule_cloudmqtt
+36 http 403 https://npm-registry.whitewater.ibm.com/@whitewater%2fnpmiotmodule_cloudmqtt
+37 verbose headers { server: 'nginx/1.10.1',
+37 verbose headers   date: 'Wed, 18 Jan 2017 05:47:57 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'content-length': '95',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-powered-by': 'Express',
+37 verbose headers   'x-varnish': '15962119',
+37 verbose headers   age: '0',
+37 verbose headers   via: '1.1 varnish-v4' }
+38 verbose request invalidating /Users/shashikiran/.npm/npm-registry.whitewater.ibm.com/_40whitewater_252fnpmiotmodule_cloudmqtt on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : @whitewater/npmiotmodule_cloudmqtt
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid @whitewater/npmiotmodule_cloudmqtt
+43 verbose cwd /Users/shashikiran/nodetest/npmiotmodule_cloudmqtt
+44 error Darwin 16.1.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.9.3
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0." : @whitewater/npmiotmodule_cloudmqtt
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

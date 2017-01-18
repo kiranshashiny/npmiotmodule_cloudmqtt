@@ -1,0 +1,26 @@
+{
+  "name": "@whitewater/npmiotmodule_cloudmqtt",
+  "version": "1.0.2",
+  "description": "Module to subscribe events from Bluemix Watson IoT Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiranshashiny/npmiotmodule_cloudmqtt.git"
+  },
+  "keywords": [
+    "iot",
+    "bluemix",
+    "cloudmqtt",
+    "npm",
+    "iotf"
+  ],
+  "author": "Shashi Kiran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiranshashiny/npmiotmodule_cloudmqtt/issues"
+  },
+  "homepage": "https://github.com/kiranshashiny/npmiotmodule_cloudmqtt#readme"
+}
